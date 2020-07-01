@@ -18,6 +18,7 @@ sh startup.sh
 * [Oh-My-Zsh](https://ohmyz.sh/) - Framework for managing your ZSH configuration
 * [Xclip](https://opensource.com/article/19/7/xclip) - Command line interface to the X11 clipboard
 * [VsCode](https://code.visualstudio.com/) - Source-code editor made by Microsoft
+* [Brave](https://brave.com/) - Best browser
 * [NVM](https://github.com/nvm-sh/nvm) - Version manager for NodeJS
 * [NodeJS](https://nodejs.org/en/) - JavaScript runtime built on Chrome's V8 JavaScript engine
 * [Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) - It suggests commands as you type based on history and completions
