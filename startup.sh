@@ -65,9 +65,11 @@ sudo apt-get install code -y # or code-insiders
 echo 'installing extensions'
 code --install-extension Shan.code-settings-sync
 
-echo 'installing chrome' 
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb
+echo 'installing brave'
+curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
+echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+sudo apt update
+sudo apt install brave-browse
 
 echo 'installing nvm' 
 sh -c "$(curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash)"
@@ -176,19 +178,9 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 
-echo 'installing kubectl'
-curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
-
 echo 'installing heroku-cli'
 curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 heroku --version
-
-echo 'installing aws-cli' 
-sudo apt-get install awscli -y
-aws --version
-curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/ubuntu_64bit/session-manager-plugin.deb" -o "session-manager-plugin.deb"
-sudo dpkg -i session-manager-plugin.deb
-session-manager-plugin --version
 
 echo 'installing fzf'
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
