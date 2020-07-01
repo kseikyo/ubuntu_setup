@@ -10,7 +10,7 @@ Just clone this repo or download and execute
 sh startup.sh
 ```
 
-## You'll be stalling...
+## You'll be installing...
 
 * [Curl](https://curl.haxx.se/) - Command line tool and library for transferring data with URLs
 * [Git](https://git-scm.com/) - Free and open source distributed version control system
@@ -18,7 +18,7 @@ sh startup.sh
 * [Oh-My-Zsh](https://ohmyz.sh/) - Framework for managing your ZSH configuration
 * [Xclip](https://opensource.com/article/19/7/xclip) - Command line interface to the X11 clipboard
 * [VsCode](https://code.visualstudio.com/) - Source-code editor made by Microsoft
-* [Brave](https://brave.com/) - Best browser
+* [Brave](https://brave.com/) - Best browser for privacy and speed
 * [NVM](https://github.com/nvm-sh/nvm) - Version manager for NodeJS
 * [NodeJS](https://nodejs.org/en/) - JavaScript runtime built on Chrome's V8 JavaScript engine
 * [Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) - It suggests commands as you type based on history and completions
