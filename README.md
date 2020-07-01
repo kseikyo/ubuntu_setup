@@ -41,7 +41,7 @@ sh startup.sh
 
 * **Olavio Lacerda** - Additions and modifications
 
-* **Lucas Sierota** - Removal and modifications
+* **Lucas Sierota** - Additions and modifications
 
 ## License
 
