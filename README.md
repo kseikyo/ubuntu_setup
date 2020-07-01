@@ -18,7 +18,6 @@ sh startup.sh
 * [Oh-My-Zsh](https://ohmyz.sh/) - Framework for managing your ZSH configuration
 * [Xclip](https://opensource.com/article/19/7/xclip) - Command line interface to the X11 clipboard
 * [VsCode](https://code.visualstudio.com/) - Source-code editor made by Microsoft
-* [Spotify](https://www.spotify.com/) - Music streaming and media services provider
 * [NVM](https://github.com/nvm-sh/nvm) - Version manager for NodeJS
 * [NodeJS](https://nodejs.org/en/) - JavaScript runtime built on Chrome's V8 JavaScript engine
 * [Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) - It suggests commands as you type based on history and completions
@@ -28,22 +27,20 @@ sh startup.sh
 * [Docker Compose](https://docs.docker.com/compose/) - Tool for defining and running multi-container Docker applications
 * [Fzf](https://github.com/junegunn/fzf) - General-purpose command-line fuzzy finder
 * [DBeaver](https://dbeaver.io/) - Universal DB tool
-* [Postman](https://www.postman.com/) - API Client
+* [Insomnia](https://insomnia.rest/) - API Client
 * [VLC](https://www.videolan.org/vlc/) - Media player
-* [Transmission](https://transmissionbt.com/) - Torrent client
-* [Kubernetes CLI](https://kubernetes.io/docs/reference/kubectl/overview/) - CLI to control Kubernetes clusters
-* [AWS CLI](https://aws.amazon.com/pt/cli/) - CLI to control AWS services
 * [Heroku CLI](https://devcenter.heroku.com/categories/command-line) - Create and manage your Heroku apps
 * [Fira Code](https://github.com/tonsky/FiraCode) - Monospaced font with programming ligatures
 * [Typescript](https://www.typescriptlang.org/) - Typed superset of JavaScript that compiles to plain JavaScript.
 * [Create React App](https://github.com/facebook/create-react-app) - Set up a modern ReactJS web app by running one command
-* [Robo3t](https://robomongo.org/) - MongoDB GUI
 
 ## Authors
 
 * **Erick Wendel** - *Initial work* - [Erick Wendel](https://github.com/ErickWendel)
 
 * **Olavio Lacerda** - Additions and modifications
+
+* **Lucas Sierota** - Removal and modifications
 
 ## License
 
