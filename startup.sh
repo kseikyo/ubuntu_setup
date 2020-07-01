@@ -64,6 +64,7 @@ sudo apt-get install code -y # or code-insiders
 
 echo 'installing extensions'
 code --install-extension Shan.code-settings-sync
+code --install-extension dracula-theme.theme-dracula
 
 echo 'installing brave'
 curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
@@ -191,9 +192,6 @@ echo 'installing dbeaver'
 wget -c https://dbeaver.io/files/6.0.0/dbeaver-ce_6.0.0_amd64.deb
 sudo dpkg -i dbeaver-ce_6.0.0_amd64.deb
 sudo apt-get install -f
-
-echo 'installing Robo3t'
-snap install robo3t-snap
 
 echo 'installing Insomnia'
 sudo snap install insomnia
