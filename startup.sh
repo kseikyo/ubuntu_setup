@@ -34,6 +34,13 @@ else
 	echo "Okay, no problem. :) Let's move on!"
 fi
 
+echo 'installing tool to handle clipboard via CLI'
+sudo apt-get install xclip -y
+
+export alias pbcopy='xclip -selection clipboard'
+export alias pbpaste='xclip -selection clipboard -o'
+source ~/.zshrc
+
 echo "Generating a SSH Key"
 ssh-keygen -t rsa -b 4096 -C $git_config_user_email
 ssh-add ~/.ssh/id_rsa
@@ -47,13 +54,6 @@ sudo apt-get install zsh -y
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 chsh -s /bin/zsh
 
-echo 'installing tool to handle clipboard via CLI'
-sudo apt-get install xclip -y
-
-export alias pbcopy='xclip -selection clipboard'
-export alias pbpaste='xclip -selection clipboard -o'
-source ~/.zshrc
-
 echo 'installing code'
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
 sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
@@ -64,9 +64,6 @@ sudo apt-get install code -y # or code-insiders
 
 echo 'installing extensions'
 code --install-extension Shan.code-settings-sync
-
-echo 'installing spotify' 
-snap install spotify
 
 echo 'installing chrome' 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -206,17 +203,12 @@ sudo apt-get install -f
 echo 'installing Robo3t'
 snap install robo3t-snap
 
-echo 'installing Postman' 
-snap install postman
+echo 'installing Insomnia'
+sudo snap install insomnia
 
 echo 'installing vlc'
 sudo apt install vlc -y
 sudo apt install vlc-plugin-access-extra libbluray-bdj libdvdcss2 -y
-
-echo 'installing transmission'
-sudo add-apt-repository ppa:transmissionbt/ppa
-sudo apt-get update
-sudo apt-get install transmission transmission-qt -y
 
 echo 'commiting changes'
 source ~/.zshrc
